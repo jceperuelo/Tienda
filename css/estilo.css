@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    /* border: 4px solid black; */
+    width: 1300px;
+    height: 1000px;
+    background-color: white;
+}
+#carrito {
+    border: 4px dashed black;
+    width: 200px;
+    height: 200px;
+    margin: 20px; 
+}
+
+.productos {
+    /* border: 4px solid black; */
+    width: 1000px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+#image {opacity: 40%;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    border: 4px solid black;
+    width: 150px;
+    height: 200px; 
+    background-color: whitesmoke;
+    opacity: 60%;
+}
+
+

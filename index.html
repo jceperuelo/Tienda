@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <br>
+
+        <h1><center>TIENDA ONLINE</center></h1>
+        <br>
+        <div class="container">
+            <div class="productos">
+                <div class="row">
+                    <div class="col"><img id="imagen" src="img/1.png" width="180px" height="180px">
+                    <h5>499,00€</h5><button onclick="setId(this.id)" id="añadir">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/c2.jpg" width="180px" height="180px">
+                        <h5>69,95€</h5><button onclick="setId(this.id)" id="add2">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/3.png" width="180px" height="180px">
+                        <h5>329,00€</h5><button onclick="setId(this.id)" id="add3">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/4.jpg" width="180px" height="180px">
+                        <h5>179,99€</h5><button onclick="setId(this.id)" id="add4">Comprar</button></div>
+                    <!-- <div class="col"></div> -->
+                    <!-- <div class="col" id="carrito">
+                        
+                    </div> -->
+                </div>
+                <div class="row"></div>
+                <br>
+                <div class="row">
+                    <div class="col"><img id="imagen" src="img/j1.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>54,99€</h5>
+                    <button id="add5" onclick="setId(this.id)" onclick="setId(this)" value="54,99€">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/j2.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>39,90€</h5><button id="add6" onclick="setId(this.id)" onclick="setId(this)" value="39,90€">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/c1.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>74,95€</h5><button id="add7" onclick="setId(this.id)" onclick="setId(this)" value="74,95€">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/j4.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>24,99€</h5><button id="add8" onclick="setId(this.id)" onclick="setId(this)" value="24,99€">Comprar</button></div>
+                    <!-- <div class="col"></div> -->
+                </div>
+                <div class="row"></div>
+                <br>
+                <div class="row">
+                    <div class="col"><img id="imagen" src="img/j9.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>49,99€</h5><button id="add9" onclick="setId(this.id)">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/j6.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>39,99€</h5><button id="add10" onclick="setId(this.id)">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/j11.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>9,90€</h5><button id="add11" onclick="setId(this.id)">Comprar</button></div>
+                    <div class="col"><img id="imagen" src="img/j13.png" width="180px" height="180px" ondragstart="drag(event)" draggable="true">
+                        <h5>44,99€</h5><button id="add12" onclick="setId(this.id)">Comprar</button></div>
+                    <!-- <div class="col"></div> -->
+                </div>
+            </div>
+            <div class="lateral">
+                <div class="row">
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <h5>CESTA</h5>
+                    <div class="col mb-5" id="carrito" ondragover="allowDrop(event)">
+                        <center><img src="img/compra.png" id="image" width="180" height="180" ></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" class="event" id="demo"></div>
+                    <button id="myBtn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>  
+</body>
+</html>
